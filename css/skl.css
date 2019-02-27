@@ -1,0 +1,42 @@
+.service-title {
+
+    font-size: 17px !important;
+
+}
+
+.dropdown-menu li, .dropdown-menu li a {
+    white-space: normal;
+    float: left;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.navbar-default .navbar-nav>li>a {
+    padding: 40px 18px!important;
+}
+
+.skl-ul{
+    padding-left: 20px !important;
+}
+
+.skl-li-square{
+    list-style-type: square !important;
+}
+
+.skl-li-circle{
+    list-style-type: circle !important;
+}
+
+.skl-text-color-gray{
+    color: #6d6d6d
+}
+
+/* When the input is not focused */
+md-input-container label {
+    color: #000000 !important;
+}
+
+.social-wrap-head li {
+    list-style-type: none
+}
