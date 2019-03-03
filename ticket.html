@@ -268,8 +268,8 @@
 
 
 <!--------------------------------------Start section-------------------------------------------------------------->
-
-<section class="complete-content">
+  
+<section class="complete-content" style="">
 
 
 <div class="container">
@@ -291,12 +291,69 @@
 							</span>
 						</div>
 						 	<div class="panel-body">
-							 							 <form enctype="multipart/form-data" action="code.php" onsubmit="chk_validation();" method="POST">
+							 	<form enctype="multipart/form-data" action="#" onsubmit="chk_validation();" method="POST">
                             <div class="row">
                                 <div class="col-lg-6">
                                    
                                         <div class="form-group">
-                                            <label>User name:</label>
+                                            <label>Visited Medical Tourism Hospital Before? &nbsp</label>
+                                            <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+											<label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+										</div>
+										
+								</div>
+								
+								<div class="col-lg-6">
+                                   
+                                    <div flex="100" class="flex-100">
+										<label>Preferred Appointment Date: &nbsp</label>
+										<md-datepicker ng-model="appointment.date" ng-change="onDateChange(appointment.date)" md-placeholder="Enter Date" md-open-on-focus="" class="ng-pristine ng-untouched ng-valid _md-datepicker-has-triangle-icon ng-isolate-scope ng-valid-mindate ng-valid-maxdate ng-valid-filtered ng-valid-valid ng-empty" tabindex="-1" aria-owns="md-date-pane-4" type="date" aria-invalid="false">
+										<button class="md-datepicker-button md-icon-button md-button md-ink-ripple" type="button" ng-transclude="" tabindex="-1" aria-hidden="true" ng-click="ctrl.openCalendarPane($event)">
+										<md-icon class="md-datepicker-calendar-icon ng-scope" aria-label="md-calendar" md-svg-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgM2gtMVYxaC0ydjJIOFYxSDZ2Mkg1Yy0xLjExIDAtMS45OS45LTEuOTkgMkwzIDE5YzAgMS4xLjg5IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMTZINVY4aDE0djExek03IDEwaDV2NUg3eiIvPjwvc3ZnPg==" role="img">
+										<svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path></svg></md-icon></button><div class="md-datepicker-input-container" ng-class="{'md-datepicker-focused': ctrl.isFocused}"><input aria-label="Enter Date" class="md-datepicker-input" aria-haspopup="true" aria-expanded="false" ng-focus="ctrl.setFocused(true)" ng-blur="ctrl.setFocused(false)" placeholder="Enter Date" size="3"> <button class="md-datepicker-triangle-button md-icon-button md-button" type="button" ng-transclude="" md-no-ink="" ng-click="ctrl.openCalendarPane($event)" aria-label="Open calendar"><div class="md-datepicker-expand-triangle ng-scope"></div></button></div><div class="md-datepicker-calendar-pane md-whiteframe-z1" id="md-date-pane-4"><div class="md-datepicker-input-mask"><div class="md-datepicker-input-mask-opaque"></div></div><div class="md-datepicker-calendar"><!-- ngIf: ctrl.isCalendarOpen --></div></div></md-datepicker>
+									</div>
+								</div>
+								
+								
+								<div class="col-lg-6">
+                                   
+                                        <div class="form-group">
+										</div>
+										
+								</div>
+								
+								
+								<div class="col-lg-6">
+                                   
+                                        <div class="form-group">
+                                            <label>SEX : &nbsp</label>
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Male</label>
+											<label class="checkbox-inline"><input type="checkbox" value="">Female</label>
+										</div>
+										
+								</div>
+								
+								
+								<div class="col-lg-6">
+										<div class="form-group">
+                                            <label>Time:</label>
+												<select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
+													<option value="" selected="selected">Select One</option>
+													<option value="IT Support">10:00AM To 12:00PM</option>
+													<option value="Software">01:00PM To 03:00PM</option>
+													<option value="Machine IT">03:00PM TO 05:00PM</option>
+												</select>
+                                        </div>
+										<input type="hidden" id="hidden_cat" value="">
+								</div>
+								
+								
+								
+								
+								<div class="col-lg-6">
+                                   
+                                        <div class="form-group">
+                                            <label>Patient's Full Name:</label>
                                             <input type="text" name="emp_id" id="emp_id" class="form-control" required="">
                                         </div>
 								</div>
@@ -309,61 +366,51 @@
                                         </div>
 								</div>
 								
-								 <div class="col-lg-6">
+								<div class="col-lg-6">
                                    
                                         <div class="form-group">
-                                            <label>User Type</label>
+                                            <label>Email:</label>
                                             <input type="text" name="emp_id" id="emp_id" class="form-control" required="">
                                         </div>
 								</div>
-								<div class="col-lg-6">
-										<div class="form-group">
-                                            <label>Support type</label>
-                                            <select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
-												<option value="" selected="selected">Select One</option>
-												  <option value="IT Support">IT Support</option>
-                                                <option value="Software">Walton Business Software Solution (WBSS)</option>
-												<option value="Machine IT">Machine IT</option>
-												<option value="Website">Website</option>
-												<!--<option value="AMS">AMS</option>-->
-												
-                                                 </select>
-                                        </div>
-										<input type="hidden" id="hidden_cat" value="">
-								</div>
-								<div class="col-lg-6">
-										<div class="form-group">
-                                            <label>Support type</label>
-                                            <select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
-												<option value="" selected="selected">Select One</option>
-												  <option value="IT Support">IT Support</option>
-                                                <option value="Software">Walton Business Software Solution (WBSS)</option>
-												<option value="Machine IT">Machine IT</option>
-												<option value="Website">Website</option>
-												<!--<option value="AMS">AMS</option>-->
-												
-                                                 </select>
-                                        </div>
-										<input type="hidden" id="hidden_cat" value="">
-								</div>	
 								
-                                <!-- /.col-lg-6 (nested) -->
-                                
+								
 								<div class="col-lg-6">
 										<div class="form-group">
-                                            <label>Service List</label>
-                                            <select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
-												<option value="" selected="selected">Select One</option>
-												  <option value="IT Support">IT Support</option>
-                                                <option value="Software">Walton Business Software Solution (WBSS)</option>
-												<option value="Machine IT">Machine IT</option>
-												<option value="Website">Website</option>
-												<!--<option value="AMS">AMS</option>-->
-												
-                                                 </select>
+                                            <label>Department:</label>
+												<select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
+													<option value="" selected="selected">Select One</option>
+													<option value="ANESTHESIOLOGY">ANESTHESIOLOGY</option>
+													<option value="CARDIOLOGY">CARDIOLOGY</option>
+													<option value="Dental Care">Dental Care</option>
+													<option value="DERMATOLOGY">DERMATOLOGY</option>
+													<option value="EMERGENCY Room">EMERGENCY Room</option>
+													<option value="ENDOCRINOLOGY">ENDOCRINOLOGY</option>
+													<option value="ICU">ICU</option>
+													<option value="INTERNAL MEDICINE">INTERNAL MEDICINE</option>
+													<option value="NEONATOLOGY">NEONATOLOGY</option>
+													<option value="ONCOLOGY">ONCOLOGY</option>
+												</select>
                                         </div>
 										<input type="hidden" id="hidden_cat" value="">
 								</div>
+								
+								
+								
+								<div class="col-lg-6">
+										<div class="form-group">
+                                            <label>District:</label>
+												<select class="form-control" id="support_t" onchange="changeval();" name="support_type" required="">
+													<option value="" selected="selected">Select One</option>
+													<option value="Dhaka">Dhaka</option>
+													<option value="tangail">Tangail</option>
+												</select>
+                                        </div>
+										<input type="hidden" id="hidden_cat" value="">
+								</div>
+
+								
+								
 								<div class="col-lg-6">
 										 <div class="form-group">
                                             <label>Subject</label>
@@ -427,8 +474,8 @@
 </div>
 
 
-
 </section>
+  
   
 
 <!--------------------------------------End section-------------------------------------------------------------->
