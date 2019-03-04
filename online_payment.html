@@ -264,11 +264,13 @@
 </header>
 
 
-
+<!--------------------------------------Start main body-------------------------------------------------------------->
+<div class="body_height">
 
 
 <!--------------------------------------Start section-------------------------------------------------------------->
-
+ 
+ 
 <section class="complete-content">
 		<div class="container center_div" style="background-color:#e6ffee; width:80%;">
 				<div class="row">
@@ -420,15 +422,40 @@
 </section>
 
   
+ 
+ 
+ 
+ 
+ 
+ 
   
 
 <!--------------------------------------End section-------------------------------------------------------------->
 
-    <section class="complete-footer">
-        <footer id="footer">
+
+</div>
+<!--------------------------------------End main body-------------------------------------------------------------->
+
+
+
+
+
+
+
+<!------------ </footer> ------------------->
+
+<div class="fotter_body">
+
+
+
 
             <div class="container">
+			
                 <div class="row">
+				
+				
+				<div class="fotter_location">
+				
                     <!--Foot widget-->
                     <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
                         
@@ -492,28 +519,42 @@
                         </dl>
                         
                     </div>
+					
+					
+                 </div>
+             </div>
+         </div>
+   </div>
+   
+   
+   
+   <div class="copy_right">
 
-                </div>
-            </div>
+		<div class="row">
+			<!--Foot widget-->
+			<div style="margin-left:60px;">
+				<div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
+					<p class="col-xs-12 col-md-12 no-pad">
+					Copyright © 2019 Medical Tourism Hospitals Ltd. Developed by Tourism Group Information Limited.</p>
 
-        </footer>
+				</div>
+			</div>
+		</div>
+				
+				
+    </div>
 
-        <div class="bottom-footer">
-            <div class="container">
+ <!------------ </footer> ------------------->
 
-                <div class="row">
-                    <!--Foot widget-->
-                    <div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
-                        <p class="col-xs-12 col-md-12 no-pad">
-						Copyright © 2019 Madical Tourism Hospitals Ltd. Developed by Tourism Group Information Limited.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
     <!--JS Inclution-->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -629,68 +670,7 @@
                 
                     
                     
-    
- <!--------------------Online Payment ------------------------------- -->
-
-			 <script>
-				 
-			   function calCualteOnlineCharge(value ){
-				var charge;
-				
-
-				var number1 = Number(document.getElementById('amt').value);
-
-				if (number1 > 0) {
-
-					charge= number1 * 2.25;
-					charge=charge/100;
-
-						document.getElementById("oCharge").value= charge;
-
-					var netAmount =  number1 + charge ;
-
-					 document.getElementById("Amount").value = Math.ceil(netAmount);
-
-					}
-				   }
-				   
-			  function termsAndConditions(){
-
-				var checker = document.getElementById('termChecke');
-				 var sendbtn = document.getElementById('payBillBtn');
-				 checker.onchange = function(){
-					if(this.checked){
-							sendbtn.disabled = false;
-					} else {
-						sendbtn.disabled = true;
-					}
-				}
-			}
-
-			</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+                
                 
                     
                 
