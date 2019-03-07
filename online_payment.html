@@ -269,10 +269,10 @@
 
 
 <!--------------------------------------Start section-------------------------------------------------------------->
- 
- 
+
+
 <section class="complete-content">
-		<div class="container center_div" style="background-color:#e6ffee; width:80%;">
+		<div class="container center_div" style="background-color:#e6e6e6; width:80%; margin-top:20px; border-radius:10px;">
 				<div class="row">
 					  <div class="col-sm-4">			  	
 					  </div>
@@ -286,7 +286,7 @@
 
 					<div class="row">
 						  <div class="col-sm-4">				  	
-							<label>Admission Number : <span style="color: red">*</span></label>
+							<label>Admission Number : <span style="color: blue">*</span></label>
 						  </div>
 
 						  <div class="col-sm-8">
@@ -296,7 +296,7 @@
 
 					<div class="row">
 						  <div class="col-sm-4">
-							<label>Registration Number : <span style="color: red">*</span></label>
+							<label>Registration Number : <span style="color: blue">*</span></label>
 						  </div>
 
 						  <div class="col-sm-8">
@@ -326,7 +326,7 @@
 							<div class="row" hidden="true">
 
 									<div class="col-md-4">
-										<label><strong> Description : <span style="color: red">*</span></strong></label>
+										<label><strong> Description : <span style="color: blue">*</span></strong></label>
 									  </div>
 
 									  <div class="col-md-8">				  	
@@ -339,7 +339,7 @@
 								<div class="row">
 
 									<div class="col-md-4">
-										<label><strong> Amount : <span style="color: red">* </span></strong>(Max 5,00000.00 BDT)</label>
+										<label><strong> Amount : <span style="color: blue">* </span></strong>(Max 5,00000.00 BDT)</label>
 									  </div>
 
 									  <div class="col-md-8">				  	
@@ -351,7 +351,7 @@
 								<div class="row">
 
 									<div class="col-md-4">
-										<label> Online Charge : 2.25% </label>
+										<label> Online Charge : 2.75% </label>
 									  </div>
 
 									  <div class="col-md-8">				  	
@@ -421,41 +421,18 @@
 		</div>
 </section>
 
-  
- 
- 
- 
- 
- 
- 
-  
-
-<!--------------------------------------End section-------------------------------------------------------------->
+ <!--------------------------------------End section-------------------------------------------------------------->
 
 
 </div>
-<!--------------------------------------End main body-------------------------------------------------------------->
+<!--------------------------------------End main body--------------------------------------------------------------> 
+  
 
-
-
-
-
-
-
-<!------------ </footer> ------------------->
-
-<div class="fotter_body">
-
-
-
+    <section class="complete-footer">
+        <footer id="footer">
 
             <div class="container">
-			
                 <div class="row">
-				
-				
-				<div class="fotter_location">
-				
                     <!--Foot widget-->
                     <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
                         
@@ -519,42 +496,28 @@
                         </dl>
                         
                     </div>
-					
-					
-                 </div>
-             </div>
-         </div>
-   </div>
-   
-   
-   
-   <div class="copy_right">
 
-		<div class="row">
-			<!--Foot widget-->
-			<div style="margin-left:60px;">
-				<div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
-					<p class="col-xs-12 col-md-12 no-pad">
-					Copyright © 2019 Medical Tourism Hospitals Ltd. Developed by Tourism Group Information Limited.</p>
+                </div>
+            </div>
 
-				</div>
-			</div>
-		</div>
-				
-				
-    </div>
+        </footer>
 
- <!------------ </footer> ------------------->
+        <div class="bottom-footer">
+            <div class="container">
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+                <div class="row">
+                    <!--Foot widget-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
+                        <p class="col-xs-12 col-md-12 no-pad">
+						Copyright © 2019 Madical Tourism Hospitals Ltd. Developed by Tourism Group Information Limited.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <!--JS Inclution-->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -670,7 +633,68 @@
                 
                     
                     
-                
+    
+ <!--------------------Online Payment ------------------------------- -->
+
+			 <script>
+				 
+			   function calCualteOnlineCharge(value ){
+				var charge;
+				
+
+				var number1 = Number(document.getElementById('amt').value);
+
+				if (number1 > 0) {
+
+					charge= number1 * 2.75;
+					charge=charge/100;
+
+						document.getElementById("oCharge").value= charge;
+
+					var netAmount =  number1 + charge ;
+
+					 document.getElementById("Amount").value = Math.ceil(netAmount);
+
+					}
+				   }
+				   
+			  function termsAndConditions(){
+
+				var checker = document.getElementById('termChecke');
+				 var sendbtn = document.getElementById('payBillBtn');
+				 checker.onchange = function(){
+					if(this.checked){
+							sendbtn.disabled = false;
+					} else {
+						sendbtn.disabled = true;
+					}
+				}
+			}
+
+			</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
                 
                     
                 
