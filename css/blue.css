@@ -327,6 +327,13 @@ hr {
     border: 0
 }
 
+
+
+
+
+
+
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     font-weight: 500;
@@ -2128,14 +2135,14 @@ select[multiple].input-lg, textarea.input-lg {
 
 .btn-success {
     color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c
+    background-color: #1a75ff;
+    border-color: #005ce6;
 }
 
 .btn-success.active, .btn-success:active, .btn-success:focus, .btn-success:hover, .open .dropdown-toggle.btn-success {
     color: #fff;
-    background-color: #47a447;
-    border-color: #398439
+	background-color: #003d99;
+    border-color: #002966;
 }
 
 .btn-success.active, .btn-success:active, .open .dropdown-toggle.btn-success {
@@ -2143,8 +2150,8 @@ select[multiple].input-lg, textarea.input-lg {
 }
 
 .btn-success.disabled, .btn-success.disabled.active, .btn-success.disabled:active, .btn-success.disabled:focus, .btn-success.disabled:hover, .btn-success[disabled], .btn-success[disabled].active, .btn-success[disabled]:active, .btn-success[disabled]:focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success.active, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:hover {
-    background-color: #5cb85c;
-    border-color: #4cae4c
+    background-color: #003d99;
+    border-color: #002966;
 }
 
 .btn-success .badge {
@@ -17678,11 +17685,17 @@ input[type=date] {
 	 text-align:center;
 }
 .body_height{
-	min-height:700px;
+	min-height:800px;
 }
 .make_appointment {
     text-align: center;
 	background: #3385ff;
 	padding: 15px;
 	color:white;
+}
+#icon_padding{
+	padding-right:14px;
+}
+.line_by_line{
+	line-height:36px;
 }
